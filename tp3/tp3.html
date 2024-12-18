@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>IFT1144-TP3</title>
+        <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Le header -->
+
+        <header>
+            <h1>Travail pratique #3</h1>
+            <h2>Identification</h2>
+            <p>Ce travail a été fait par Viktor Hoang matricule: 20051780</p>
+        </header>
+        
+        <!-- Le main -->
+
+        <main>
+
+            <!-- Partie 1 -->
+            <h2>Partie 1: Formulaire de conversion</h2>
+            <p>
+            <br>
+                Valeur: <input type="text" id="valeur" placeholder="0"><span id="resultat"> Resultat ici</span>
+            </p>
+
+            <br>
+            <button onclick="poucesVersCm()">Pouces vers Cm</button>
+            <button onclick="cmVersPouces()">Cm vers Pouces</button>
+            <button onclick="celciusVersFarenheit()">Celcius vers Farenheit</button>
+            <button onclick="farenheitVersCelcius()">Farenheit vers Celcius</button>
+            <br>
+
+            <!-- Partie 2 -->
+            <br>
+            <h2>Partie 2: Affichage du texte dans la page Web (contrôlé par JavaScript -)</h2>
+            <br>
+            <p>
+                Nom: <input type="text" id="nomPre" placeholder="Nom Prénom"></p>
+            <br>
+            <p>
+                Niveau (1 à 6) <input type="text" id="niveau" placeholder="0">
+                <button onclick="afficherMessage()">Afficher partie 2</button>
+            </p>
+            <br>
+            <div id="affichage">
+                Affichage ici
+            </div>
+            <br>
+
+            <!-- Partie 3 -->
+             <div class="partie3">
+
+                <h2>Partie 3: Affichage du menu, animation des images et calcul du coût</h2>
+
+                <div class="partie3-blocs">
+
+                    <div class="menu">
+                        <ul>
+                            <li class="categorie">Menu</li>
+                            <li class="categorie">Entrée
+                                <ul class="options">
+                                    <li>Escargot</li>
+                                    <li>Salade verte</li>
+                                    <li>Salade César</li>
+                                </ul>
+                            </li>
+                            <li class="categorie">Principal
+                                <ul class="options">
+                                    <li>Spaghetti</li>
+                                    <li>Steak</li>
+                                    <li>Pizza</li>
+                                </ul>
+                            </li>
+                            <li class="categorie">Dessert
+                                <ul class="options">
+                                    <li>Crème glacée</li>
+                                    <li>Gateau</li>
+                                    <li>Pouding</li>
+                                </ul>
+                            </li>
+                            <li class="categorie">Boisson
+                                <ul class="options">
+                                    <li>Café / Thé</li>
+                                    <li>Boisson gazeuse</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="affichage">
+                    <h2>Votre choix:</h2>
+                        <div id="images-prix">
+                            <h3 class="categorie" id="entree">Entrée:<br>
+                                <img src="images/vide.jpg" alt="Entree" id="imgEntree"><br>
+                                <span id="prixEntree"></span>
+                            </h3>
+                            <h3 class="categorie" id="principal">Principal:<br>
+                                <img src="images/vide.jpg" alt="Principal" id="imgPrincipal"><br>
+                                <span id="prixPrincipal"></span>
+                            </h3>
+                            <h3 class="categorie" id="dessert">Dessert:<br>
+                                <img src="images/vide.jpg" alt="Dessert" id="imgDessert"><br>
+                                <span id="prixDessert"></span>
+                            </h3>
+                            <h3 class="categorie" id="boissoin">Boisson:<br>
+                                <img src="images/vide.jpg" alt="Boisson" id="imgBoisson"><br>
+                                <span id="prixBoisson"></span>
+                            </h3>
+                        </div>
+                    <button id="calculer-total">Cliquez ici pour calculer la facture</button>
+                    <div id="total"></div>
+                    </div>
+
+                </div>
+
+             </div>
+            
+        </main>
+
+        <!-- Le footer -->
+
+        <footer>
+        </footer>
+
+    </body>
+
+</html>

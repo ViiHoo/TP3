@@ -1,0 +1,57 @@
+.partie3 {
+    border: 1px solid black;
+}
+
+.partie3-blocs {
+    display: flex;
+}
+
+.menu {
+    width: 175px;
+    background-color: #E5EECC;
+    max-height: 90px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu .categorie {
+    cursor: pointer;
+    background-color: #E5EECC;
+    font-size: 23px;
+}
+
+.menu .categorie:hover {
+    background-color: #D5CCEE;
+}
+
+.menu .options {
+    display: none;
+    padding-left: 10px;
+    list-style-type: none;
+    background-color: #E5EECC;
+}
+
+.menu .options li {
+    cursor: pointer;
+}
+
+.menu .options li:hover {
+    background-color: #D5CCEE;
+}
+
+#images-prix {
+    display: flex;
+    margin-top: -20px;
+}
+
+#images-prix img {
+    padding-right: 100px;
+}
+
+#total {
+    margin-top: 10px;
+}
